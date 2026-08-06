@@ -356,7 +356,7 @@ class HLSProxyCoreMixin:
         """
         try:
             cache_buster = int(time.time())
-            url = f"https://raw.githubusercontent.com/realbestia1/EasyProxy/main/config.py?t={cache_buster}"
+            url = f"https://raw.githubusercontent.com/DevGizmo86/EasyProxy/main/config.py?t={cache_buster}"
 
             connector = TCPConnector(limit=1, limit_per_host=1, keepalive_timeout=5)
             timeout = ClientTimeout(total=5)
